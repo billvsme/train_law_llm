@@ -53,6 +53,10 @@ python src/train_bash.py \
     --plot_loss True
 ```
 
+**效果**
+
+<a href="https://sm.ms/image/gXNOy3lHdmeqv5j" target="_blank"><img src="https://s2.loli.net/2023/11/07/gXNOy3lHdmeqv5j.png" width="60%"></a>
+
 ## 法律问答微调
 法律问答数据来源：[DISC-LawLLM](https://github.com/FudanDISC/DISC-LawLLM)  
 为了减省显存，使用deepspeed stage2，cutoff_len可以最多到1664，再多就要爆显存了  
