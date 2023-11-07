@@ -60,7 +60,7 @@ python src/train_bash.py \
 
 ## 法律问答微调
 法律问答数据来源：[DISC-LawLLM](https://github.com/FudanDISC/DISC-LawLLM)  
-为了减省显存，使用deepspeed stage2，cutoff_len可以最多到1664，再多就要爆显存了  
+为了减省显存，使用deepspeed stage2，cutoff_len可以最多到1792，再多就要爆显存了  
 
 **deepspeed配置**
 ```
@@ -109,7 +109,7 @@ deepspeed --num_gpus 1 --master_port=9901 src/train_bash.py \
     --shift_attn False \
     --dataset_dir data \
     --dataset self_cognition,law_sft_triplet \
-    --cutoff_len 1664 \
+    --cutoff_len 1792 \
     --learning_rate 2e-04 \
     --num_train_epochs 5.0 \
     --max_samples 1000 \
