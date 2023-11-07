@@ -38,8 +38,8 @@ python src/train_bash.py \
     --learning_rate 2e-04 \
     --num_train_epochs 20.0 \
     --max_samples 1000 \
-    --per_device_train_batch_size 1 \
-    --per_device_eval_batch_size 1 \
+    --per_device_train_batch_size 6 \
+    --per_device_eval_batch_size 6 \
     --gradient_accumulation_steps 1 \
     --lr_scheduler_type cosine \
     --max_grad_norm 1.0 \
