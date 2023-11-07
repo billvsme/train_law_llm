@@ -1,7 +1,8 @@
 train_law_llm
 ==============
 
-LLM微调上手项目，一步一步使用colab训练法律LLM，基于[microsoft/phi-1_5](https://huggingface.co/microsoft/phi-1_5) 
+LLM微调上手项目，一步一步使用colab训练法律LLM，基于[microsoft/phi-1_5](https://huggingface.co/microsoft/phi-1_5) 。通过本项目你可以0成本手动了解微调LLM。  
+
 
 | name | Colab | 数据
 | --- | --- | --- 
