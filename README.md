@@ -15,7 +15,7 @@ LLM微调上手项目，一步一步使用colab训练法律LLM，基于phi-1_5
 ## 自我认知微调
 自我认知数据来源：[self_cognition.json](https://github.com/hiyouga/LLaMA-Factory/blob/main/data/self_cognition.json)  
 
-80条数据，使用T4微淘phi-1_5，几分钟就可以微调完毕  
+80条数据，使用T4微调phi-1_5，几分钟就可以微调完毕  
 
 **微调参数**，具体步骤详见colab
 ```
