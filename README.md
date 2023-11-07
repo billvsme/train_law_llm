@@ -4,13 +4,13 @@ train_law_llm
 LLM微调上手项目，一步一步使用colab训练法律LLM，基于[microsoft/phi-1_5](https://huggingface.co/microsoft/phi-1_5) 。通过本项目你可以0成本手动了解微调LLM。  
 
 
-| name | Colab | 数据
+| name | Colab | Datasets
 | --- | --- | --- 
 自我认知lora-SFT微调 | [![web ui](https://img.shields.io/badge/✏️-Colab-important)](https://colab.research.google.com/drive/1in_tXBkewd5FivNTOn-B6Za_WjRyHL4r#scrollTo=h43G1zhf7msU&forceEdit=true&sandboxMode=true) | [self_cognition.json](https://github.com/hiyouga/LLaMA-Factory/blob/main/data/self_cognition.json)  
 法律问答lora-SFT微调 | [![web ui](https://img.shields.io/badge/✏️-Colab-important)](https://colab.research.google.com/drive/1bfUb1HsJOgdzZMrVlk2RCXDynQIa6It3#forceEdit=true&sandboxMode=true) | [DISC-LawLLM](https://github.com/FudanDISC/DISC-LawLLM)  
-法律问答 全参数-SFT微调* | [![web ui](https://img.shields.io/badge/✏️-Colab-important)](https://colab.research.google.com/drive/1b8Mus2e_KWq1oVzXSx9Zacx_ACD51BMX#scrollTo=CZmSHoI_8Jo6&forceEdit=true&sandboxMode=true) | [DISC-LawLLM](https://github.com/FudanDISC/DISC-LawLLM)  
+法律问答 全参数-SFT微调* | [![web ui](https://img.shields.io/badge/✏️-Colab-important)](https://colab.research.google.com/drive/1b8Mus2e_KWq1oVzXSx9Zacx_ACD51BMX#scrollTo=o55DdL4NcS9E&forceEdit=true&sandboxMode=true) | [DISC-LawLLM](https://github.com/FudanDISC/DISC-LawLLM)  
 
-*如果是Colab Pro会员用户，可以尝试全参数-SFT微调，使用高内存+T4，1000条数据，大概需要20+小时
+*如果是Colab Pro会员用户，可以尝试全参数-SFT微调，使用高内存+T4，1000条数据大概需要20+小时
 
 
 ## 目标
@@ -197,7 +197,7 @@ deepspeed --num_gpus 1 --master_port=9901 src/train_bash.py \
     --flash_attn False \
     --shift_attn False \
     --dataset_dir data \
-    --dataset self_cognition \
+    --dataset self_cognition,law_sft_triplet \
     --cutoff_len 1024 \
     --learning_rate 2e-04 \
     --num_train_epochs 10.0 \
@@ -217,7 +217,7 @@ deepspeed --num_gpus 1 --master_port=9901 src/train_bash.py \
     --lora_dropout 0.1 \
     --lora_target Wqkv \
     --resume_lora_training True \
-    --output_dir saves/Phi1.5-1.3B/lora/law \
+    --output_dir saves/Phi1.5-1.3B/lora/law_full \
     --fp16 True \
     --plot_loss True
 ```
