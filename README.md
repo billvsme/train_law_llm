@@ -1,7 +1,7 @@
 train_law_llm
 ==============
 
-LLM微调上手项目，一步一步使用colab训练法律LLM，基于phi-1_5
+LLM微调上手项目，一步一步使用colab训练法律LLM，基于[microsoft/phi-1_5](https://huggingface.co/microsoft/phi-1_5) 
 
 | name | Colab | 数据
 | --- | --- | --- 
@@ -9,13 +9,13 @@ LLM微调上手项目，一步一步使用colab训练法律LLM，基于phi-1_5
 法律问答微调 | [![web ui](https://img.shields.io/badge/✏️-Colab-important)](https://colab.research.google.com/drive/1bfUb1HsJOgdzZMrVlk2RCXDynQIa6It3#forceEdit=true&sandboxMode=true) | [DISC-LawLLM](https://github.com/FudanDISC/DISC-LawLLM)  
 
 ## 目标
-使用colab免费的T4显卡，完成通过法律问答数据微调 [microsoft/phi-1_5](https://huggingface.co/microsoft/phi-1_5) 模型  
+使用colab免费的T4显卡，完成法律问答 指令监督微调(SFT) [microsoft/phi-1_5](https://huggingface.co/microsoft/phi-1_5) 模型  
 
 
 ## 自我认知微调
 自我认知数据来源：[self_cognition.json](https://github.com/hiyouga/LLaMA-Factory/blob/main/data/self_cognition.json)  
 
-80条数据，使用T4微调phi-1_5，几分钟就可以微调完毕  
+80条数据，使用T4 lora微调phi-1_5，几分钟就可以微调完毕  
 
 **微调参数**，具体步骤详见colab
 ```
