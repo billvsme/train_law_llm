@@ -221,5 +221,38 @@ deepspeed --num_gpus 1 --master_port=9901 src/train_bash.py \
     --plot_loss True
 ```
 
+也可以考虑使用 [kaggle](https://www.kaggle.com/)，可以每周使用30个小时，可以选择2张T4，使用ZeRO stage 3 全参微调  
+
+**deepspeed配置**  
+```
+{
+  "train_batch_size": "auto",
+  "train_micro_batch_size_per_gpu": "auto",
+  "gradient_accumulation_steps": "auto",
+  "gradient_clipping": "auto",
+  "zero_allow_untested_optimizer": true,
+  "fp16": {
+    "enabled": "auto",
+    "loss_scale": 0,
+    "initial_scale_power": 16,
+    "loss_scale_window": 1000,
+    "hysteresis": 2,
+    "min_loss_scale": 1
+  },
+  "zero_optimization": {
+    "stage": 3,
+    "overlap_comm": false,
+    "contiguous_gradients": true,
+    "sub_group_size": 5e7,
+    "reduce_bucket_size": "auto",
+    "stage3_prefetch_bucket_size": "auto",
+    "stage3_param_persistence_threshold": "auto",
+    "stage3_max_live_parameters": 5e7,
+    "stage3_max_reuse_distance": 5e7,
+    "stage3_gather_16bit_weights_on_model_save": true
+  }
+}
+```
+
 
 
