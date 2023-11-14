@@ -8,8 +8,10 @@
 自我认知 lora-SFT 微调 | [![web ui](https://img.shields.io/badge/✏️-Colab-important)](https://colab.research.google.com/drive/1in_tXBkewd5FivNTOn-B6Za_WjRyHL4r#scrollTo=h43G1zhf7msU&forceEdit=true&sandboxMode=true) | [self_cognition.json](https://github.com/hiyouga/LLaMA-Factory/blob/main/data/self_cognition.json)  
 法律问答 lora-SFT 微调 | [![web ui](https://img.shields.io/badge/✏️-Colab-important)](https://colab.research.google.com/drive/1bfUb1HsJOgdzZMrVlk2RCXDynQIa6It3#forceEdit=true&sandboxMode=true) | [DISC-LawLLM](https://github.com/FudanDISC/DISC-LawLLM)  
 法律问答 全参数-SFT 微调* | [![web ui](https://img.shields.io/badge/✏️-Colab-important)](https://colab.research.google.com/drive/1b8Mus2e_KWq1oVzXSx9Zacx_ACD51BMX#scrollTo=o55DdL4NcS9E&forceEdit=true&sandboxMode=true) | [DISC-LawLLM](https://github.com/FudanDISC/DISC-LawLLM)  
+ChatGLM3-6B 自我认知 lora-SFT 微调* | [![web ui](https://img.shields.io/badge/✏️-Colab-important)](https://colab.research.google.com/drive/13fLz3b_BnRathbUn7O7z_od1JRXZJvPd#scrollTo=CZmSHoI_8Jo6&forceEdit=true&sandboxMode=true) | [self_cognition.json](https://github.com/hiyouga/LLaMA-Factory/blob/main/data/self_cognition.json)  
 
-*如果是Colab Pro会员用户，可以尝试全参数-SFT微调，使用高RAM+T4，1000条数据大概需要20+小时
+*如果是Colab Pro会员用户，可以尝试全参数-SFT微调，使用高RAM+T4，1000条数据大概需要20+小时  
+*如果是Colab Pro会员用户，ChatGLM3-6B 自我认知lora-SFT 微调，使用高RAM+T4，只需要几分钟，效果比较好
 
 
 ## 目标
