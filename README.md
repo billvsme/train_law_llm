@@ -1,7 +1,7 @@
 ✏️LLM微调上手项目
 ==============
 
-一步一步使用Colab训练法律LLM，基于[microsoft/phi-1_5](https://huggingface.co/microsoft/phi-1_5) 。通过本项目你可以0成本手动了解微调LLM。  
+一步一步使用Colab训练法律LLM，基于[microsoft/phi-1_5](https://huggingface.co/microsoft/phi-1_5) ,[ChatGLM3-6B](https://huggingface.co/THUDM/chatglm3-6b)。通过本项目你可以0成本手动了解微调LLM。如果想要了解LLM微调具体代码实现，**可以参考 [my_finetune](https://github.com/billvsme/my_finetune) 项目**🤓。
 
 | name | Colab | Datasets
 | --- | --- | --- 
